@@ -14,7 +14,10 @@ const NavbarButton: React.FC<iNavbarButton> = ({
     const capitalized = state.charAt(0).toUpperCase() + state.slice(1);
     return (
         <li className="p-1">
-            <button className="btn" onClick={() => handleSetDashboard(state)}>
+            <button
+                className="btn w-[100px] text-base bg-black border-0 text-white hover:bg-teal-700"
+                onClick={() => handleSetDashboard(state)}
+            >
                 {capitalized}
             </button>
         </li>
@@ -22,9 +25,9 @@ const NavbarButton: React.FC<iNavbarButton> = ({
 };
 
 const Navbar: React.FC<iNavbar> = ({ handleSetDashboard }) => {
-    const arr = ["home", "about", "contact"];
+    const arr = ["projects", "about"];
     return (
-        <div className="navbar sticky top-0 z-50 bg-white">
+        <div className="navbar sticky top-0 z-50 bg-white text-black border-y-2 border-black">
             <div className="flex-1">
                 <a className="btn btn-ghost text-xl">Daniel Gavidia</a>
             </div>

@@ -51,6 +51,8 @@ const About = () => {
     return (
         <div className="flex justify-center">
             <div className="w-[600px]">
+                <br />
+                <br />
                 <div className="flex">
                     <div className="w-[300px]">
                         <div className="text-lg font-bold">Daniel Gavidia</div>
@@ -62,19 +64,21 @@ const About = () => {
                         <div>
                             {dataContact.map((x, id) => {
                                 return (
-                                    <div
-                                        key={id}
-                                        className="flex space-x-4 pb-2"
-                                    >
-                                        <img
-                                            src={x.linkSrc}
-                                            alt="svgImg"
-                                            className="w-[25px] h-[25px]"
-                                        />
-                                        <div className="text-xs content-center">
-                                            {x.linkContact}
+                                    <a href={x.linkHyper}>
+                                        <div
+                                            key={id}
+                                            className="flex space-x-4 pb-2"
+                                        >
+                                            <img
+                                                src={x.linkSrc}
+                                                alt="svgImg"
+                                                className="w-[25px] h-[25px]"
+                                            />
+                                            <div className="text-xs content-center">
+                                                {x.linkContact}
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 );
                             })}
                         </div>
@@ -121,6 +125,8 @@ const About = () => {
                         );
                     })}
                 </div>
+                <br />
+                <br />
             </div>
         </div>
     );
