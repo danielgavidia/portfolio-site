@@ -2,8 +2,8 @@ export const dataExperience = [
     {
         institution: "Marsh McLennan",
         location: "New York, NY",
-        dateStart: "July 2022",
-        dateEnd: "September 2024",
+        dateStart: "Jul 2022",
+        dateEnd: "Sep 2024",
         role: "Developer / Finance Associate",
         description: [
             "Developed multiple containerized and OSS2-deployed tools alongside CIS Innovation team: the Anaplan API, the Azure Blob API, and Dagster automated schedulers for ML renewal and variance tagging workflows.",
@@ -14,7 +14,7 @@ export const dataExperience = [
     {
         institution: "Cloud Factory",
         location: "Durham, NC",
-        dateStart: "January 2021",
+        dateStart: "Jan 2021",
         dateEnd: "May 2021",
         role: "Corporate Strategy Consultant (part-time)",
         description: [
@@ -24,7 +24,7 @@ export const dataExperience = [
     {
         institution: "Teach for America",
         location: "Miami, FL",
-        dateStart: "August 2017",
+        dateStart: "Aug 2017",
         dateEnd: "May 2020",
         role: "Educator",
         description: [

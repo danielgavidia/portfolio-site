@@ -2,7 +2,7 @@ export const dataEducation = [
     {
         institution: "Duke University",
         location: "Durham, NC",
-        dateStart: "August 2020",
+        dateStart: "Aug 2020",
         dateEnd: "May 2022",
         role: "Master of Business Administration",
         description: [
@@ -14,7 +14,7 @@ export const dataEducation = [
     {
         institution: "University of Southern California",
         location: "Los Angeles, CA",
-        dateStart: "August 2013",
+        dateStart: "Aug 2013",
         dateEnd: "May 2017",
         role: "Bachelor of Arts, English",
         description: ["Full-tuition merit scholarship recipient."],

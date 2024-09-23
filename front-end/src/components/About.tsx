@@ -1,5 +1,6 @@
 import { dataEducation } from "../data/dataEducation";
 import { dataExperience } from "../data/dataExperience";
+import { dataContact } from "../data/dataContact";
 
 interface iCardResume {
     institution: string;
@@ -50,17 +51,42 @@ const About = () => {
     return (
         <div className="flex justify-center">
             <div className="w-[600px]">
-                <div className="text-lg font-bold">Daniel Gavidia</div>
-                <div className="text-sm font-medium">
-                    Software Development, Finance
-                </div>
-                <div className="text-sm font-light">Brooklyn, NY</div>
                 <div className="flex">
-                    <div>email</div>
-                    <div>github</div>
-                    <div>linkedin</div>
-                    <div>X/twitter</div>
+                    <div className="w-[300px]">
+                        <div className="text-lg font-bold">Daniel Gavidia</div>
+                        <div className="text-sm font-medium">
+                            Software Development, Finance
+                        </div>
+                        <div className="text-sm font-light">Brooklyn, NY</div>
+                        <br />
+                        <div>
+                            {dataContact.map((x, id) => {
+                                return (
+                                    <div
+                                        key={id}
+                                        className="flex space-x-4 pb-2"
+                                    >
+                                        <img
+                                            src={x.linkSrc}
+                                            alt="svgImg"
+                                            className="w-[25px] h-[25px]"
+                                        />
+                                        <div className="text-xs content-center">
+                                            {x.linkContact}
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+                    <div className="w-[300px] flex justify-end">
+                        <img
+                            src="../src/assets/profile.jpg"
+                            className="w-[200px] h-[200px] rounded-lg"
+                        />
+                    </div>
                 </div>
+                <br />
                 <br />
                 <div>
                     <div className="text-lg font-bold">Education</div>
