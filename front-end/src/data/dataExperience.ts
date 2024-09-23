@@ -1,6 +1,6 @@
 export const dataExperience = [
     {
-        company: "Marsh McLennan",
+        institution: "Marsh McLennan",
         location: "New York, NY",
         dateStart: "July 2022",
         dateEnd: "September 2024",
@@ -12,7 +12,7 @@ export const dataExperience = [
         ],
     },
     {
-        company: "Cloud Factory",
+        institution: "Cloud Factory",
         location: "Durham, NC",
         dateStart: "January 2021",
         dateEnd: "May 2021",
@@ -22,7 +22,7 @@ export const dataExperience = [
         ],
     },
     {
-        company: "Teach for America",
+        institution: "Teach for America",
         location: "Miami, FL",
         dateStart: "August 2017",
         dateEnd: "May 2020",
