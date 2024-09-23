@@ -51,6 +51,8 @@ const About = () => {
     return (
         <div className="flex justify-center">
             <div className="w-[600px]">
+                <br />
+                <br />
                 <div className="flex">
                     <div className="w-[300px]">
                         <div className="text-lg font-bold">Daniel Gavidia</div>
@@ -121,6 +123,8 @@ const About = () => {
                         );
                     })}
                 </div>
+                <br />
+                <br />
             </div>
         </div>
     );

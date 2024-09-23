@@ -11,7 +11,7 @@ interface iProjectCard {
 
 const ProjectCard: React.FC<iProjectCard> = ({ project }) => {
     return (
-        <div className="card bg-base-100 shadow-x p-10">
+        <div className="card card-compact bg-base-100 p-10 border-2 border-gray">
             <figure>
                 <img
                     src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
@@ -20,22 +20,23 @@ const ProjectCard: React.FC<iProjectCard> = ({ project }) => {
             </figure>
             <div className="card-body">
                 <h2 className="card-title">{project.title}</h2>
-                <p>{project.body}</p>
+                <p className="">{project.body}</p>
+                <br />
                 <div className="card-actions justify-evenly">
                     <a
-                        className="btn btn-sm btn-primary w-20"
+                        className="btn btn-xs bg-white border-1 border-black w-[70px]"
                         href={project.linkSite}
                     >
                         Site
                     </a>
                     <a
-                        className="btn btn-sm btn-primary w-20"
+                        className="btn btn-xs bg-white border-1 border-black w-[70px]"
                         href={project.linkGithub}
                     >
                         Github
                     </a>
                     <a
-                        className="btn btn-sm btn-primary w-20"
+                        className="btn btn-xs bg-white border-1 border-black w-[70px]"
                         href={project.linkDemo}
                     >
                         Demo

@@ -1,21 +1,20 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
+import Projects from "./components/Projects";
 import About from "./components/About";
-import Contact from "./components/Contact";
 
 const App = () => {
-    const [dashboard, setDashboard] = useState<string>("home");
+    const [dashboard, setDashboard] = useState<string>("projects");
     const handleSetDashboard = (state: string): void => {
         setDashboard(state);
     };
     console.log(dashboard);
 
-    if (dashboard === "home") {
+    if (dashboard === "projects") {
         return (
             <div className="App">
                 <Navbar handleSetDashboard={handleSetDashboard} />
-                <Home />
+                <Projects />
             </div>
         );
     } else if (dashboard === "about") {
@@ -23,13 +22,6 @@ const App = () => {
             <div className="App">
                 <Navbar handleSetDashboard={handleSetDashboard} />
                 <About />
-            </div>
-        );
-    } else if (dashboard === "contact") {
-        return (
-            <div className="App">
-                <Navbar handleSetDashboard={handleSetDashboard} />
-                <Contact />
             </div>
         );
     }

@@ -57,14 +57,18 @@ const data = [
     },
 ];
 
-const Home = () => {
+const Projects = () => {
     return (
-        <div className="grid grid-cols-3 gap-4">
-            {data.map((x) => {
-                return <ProjectCard key={x.id} project={x} />;
-            })}
+        <div>
+            <br />
+            <div className="grid grid-cols-3 gap-4 p-2">
+                {data.map((x) => {
+                    return <ProjectCard key={x.id} project={x} />;
+                })}
+            </div>
+            <br />
         </div>
     );
 };
 
-export default Home;
+export default Projects;
