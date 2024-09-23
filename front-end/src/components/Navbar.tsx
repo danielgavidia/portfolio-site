@@ -24,7 +24,7 @@ const NavbarButton: React.FC<iNavbarButton> = ({
 const Navbar: React.FC<iNavbar> = ({ handleSetDashboard }) => {
     const arr = ["home", "about", "contact"];
     return (
-        <div className="navbar sticky top-0">
+        <div className="navbar sticky top-0 z-50 bg-white">
             <div className="flex-1">
                 <a className="btn btn-ghost text-xl">Daniel Gavidia</a>
             </div>
