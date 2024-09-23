@@ -1,6 +1,7 @@
 import { dataEducation } from "../data/dataEducation";
 import { dataExperience } from "../data/dataExperience";
 import { dataContact } from "../data/dataContact";
+import imageProfile from "../assets/profile.jpg";
 
 interface iCardResume {
     institution: string;
@@ -85,7 +86,7 @@ const About = () => {
                     </div>
                     <div className="w-[300px] flex justify-end">
                         <img
-                            src="../src/assets/profile.jpg"
+                            src={imageProfile}
                             className="w-[200px] h-[200px] rounded-lg"
                         />
                     </div>
