@@ -5,27 +5,30 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 
 const App = () => {
-    const [dashboard, setDashboard] = useState("home");
+    const [dashboard, setDashboard] = useState<string>("home");
+    const handleSetDashboard = (state: string): void => {
+        setDashboard(state);
+    };
     console.log(dashboard);
 
     if (dashboard === "home") {
         return (
             <div className="App">
-                <Navbar />
+                <Navbar handleSetDashboard={handleSetDashboard} />
                 <Home />
             </div>
         );
     } else if (dashboard === "about") {
         return (
             <div className="App">
-                <Navbar />
+                <Navbar handleSetDashboard={handleSetDashboard} />
                 <About />
             </div>
         );
     } else if (dashboard === "contact") {
         return (
             <div className="App">
-                <Navbar />
+                <Navbar handleSetDashboard={handleSetDashboard} />
                 <Contact />
             </div>
         );

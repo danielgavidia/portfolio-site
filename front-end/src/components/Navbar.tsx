@@ -1,4 +1,8 @@
-const Navbar = () => {
+interface iNavbar {
+    handleSetDashboard: (state: string) => void;
+}
+
+const Navbar: React.FC<iNavbar> = ({ handleSetDashboard }) => {
     return (
         <div className="navbar">
             <div className="flex-1">
@@ -9,7 +13,7 @@ const Navbar = () => {
                     <li>
                         <button
                             className="btn"
-                            // onClick={() => handleSetDashboard("home")}
+                            onClick={() => handleSetDashboard("home")}
                         >
                             Home
                         </button>
@@ -17,7 +21,7 @@ const Navbar = () => {
                     <li>
                         <button
                             className="btn"
-                            // onClick={() => handleSetDashboard("about")}
+                            onClick={() => handleSetDashboard("about")}
                         >
                             About
                         </button>
@@ -25,7 +29,7 @@ const Navbar = () => {
                     <li>
                         <button
                             className="btn"
-                            // onClick={() => handleSetDashboard("contact")}
+                            onClick={() => handleSetDashboard("contact")}
                         >
                             Contact
                         </button>
