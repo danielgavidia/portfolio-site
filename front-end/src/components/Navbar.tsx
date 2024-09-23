@@ -15,7 +15,7 @@ const NavbarButton: React.FC<iNavbarButton> = ({
     return (
         <li className="p-1">
             <button
-                className="btn w-[100px] text-base bg-black border-0 text-white hover:bg-purple-400"
+                className="btn w-[100px] text-base bg-black border-0 text-white hover:bg-red-600"
                 onClick={() => handleSetDashboard(state)}
             >
                 {capitalized}
@@ -27,11 +27,9 @@ const NavbarButton: React.FC<iNavbarButton> = ({
 const Navbar: React.FC<iNavbar> = ({ handleSetDashboard }) => {
     const arr = ["projects", "about"];
     return (
-        <div className="navbar sticky top-0 z-50 bg-black">
+        <div className="navbar sticky top-0 z-50 bg-white text-black border-y-2 border-black">
             <div className="flex-1">
-                <a className="btn btn-ghost text-xl text-white">
-                    Daniel Gavidia
-                </a>
+                <a className="btn btn-ghost text-xl">Daniel Gavidia</a>
             </div>
             <div className="flex-none">
                 <ul className="menu menu-horizontal px-1">

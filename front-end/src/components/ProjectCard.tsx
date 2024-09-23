@@ -22,7 +22,7 @@ const ProjectCard: React.FC<iProjectCard> = ({ project }) => {
                 <h2 className="card-title">{project.title}</h2>
                 <p className="">{project.body}</p>
                 <br />
-                <div className="card-actions justify-evenly">
+                <div className="card-actions justify-end">
                     <a
                         className="btn btn-xs bg-white border-1 border-black w-[70px]"
                         href={project.linkSite}

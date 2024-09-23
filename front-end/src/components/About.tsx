@@ -64,19 +64,21 @@ const About = () => {
                         <div>
                             {dataContact.map((x, id) => {
                                 return (
-                                    <div
-                                        key={id}
-                                        className="flex space-x-4 pb-2"
-                                    >
-                                        <img
-                                            src={x.linkSrc}
-                                            alt="svgImg"
-                                            className="w-[25px] h-[25px]"
-                                        />
-                                        <div className="text-xs content-center">
-                                            {x.linkContact}
+                                    <a href={x.linkHyper}>
+                                        <div
+                                            key={id}
+                                            className="flex space-x-4 pb-2"
+                                        >
+                                            <img
+                                                src={x.linkSrc}
+                                                alt="svgImg"
+                                                className="w-[25px] h-[25px]"
+                                            />
+                                            <div className="text-xs content-center">
+                                                {x.linkContact}
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 );
                             })}
                         </div>
