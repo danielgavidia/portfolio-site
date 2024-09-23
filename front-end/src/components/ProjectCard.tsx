@@ -13,10 +13,7 @@ const ProjectCard: React.FC<iProjectCard> = ({ project }) => {
     return (
         <div className="card card-compact bg-base-100 p-10 border-2 border-gray">
             <figure>
-                <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes"
-                />
+                <img src={project.image} />
             </figure>
             <div className="card-body">
                 <h2 className="card-title">{project.title}</h2>

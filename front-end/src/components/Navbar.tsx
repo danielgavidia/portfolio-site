@@ -15,7 +15,7 @@ const NavbarButton: React.FC<iNavbarButton> = ({
     return (
         <li className="p-1">
             <button
-                className="btn w-[100px] text-base bg-black border-0 text-white hover:bg-red-600"
+                className="btn w-[100px] text-base bg-black border-0 text-white hover:bg-teal-700"
                 onClick={() => handleSetDashboard(state)}
             >
                 {capitalized}
